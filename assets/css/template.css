@@ -68,7 +68,10 @@ img {
     display: inline-block;
     margin: 30px;
 }
-
+.skillIconContainer img{
+    height: 4rem;
+    width: auto;
+}
 
 iframe {
     border: 0;
