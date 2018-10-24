@@ -93,7 +93,7 @@ h6 > a:focus {
 .bg-dark a:not(.btn),
 .bg-gradient a:not(.btn),
 .module-dark a:not(.btn) {
-    color: #27ae60;
+    color: #fff;
 }
 
 .bg-dark a:not(.btn):hover,
