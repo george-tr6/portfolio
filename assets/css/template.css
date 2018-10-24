@@ -54,6 +54,9 @@ img {
     flex:0 0 100%;
     max-width: 100%;
 }
+
+/* Custom Styling */
+
 .skillContailner{
     display: inline-flex;
     flex-direction: row;
@@ -72,6 +75,40 @@ img {
     height: 4rem;
     width: auto;
 }
+.btns-action{
+/*     
+    font-size: 18px;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: calc(35px - 4px);
+    border: 2px solid white;
+    border-radius: 50%; 
+    margin: 10px; */
+
+    display: flex;
+    flex-direction: row;
+    
+}
+.btns-action i{
+    font-size: 15px;
+    margin: 10px;
+    /* align-items: center; */
+    margin-bottom: 20px;
+
+}
+.social-text{
+    font-family: "Monserrat", Arial, serif;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    
+}
+
+
 
 iframe {
     border: 0;
@@ -240,7 +277,8 @@ iframe {
 */
 
 a {
-    color: #e41919;
+    /* color: #e41919; */
+    color: #27ae60;
     transition: all .3s ease-in-out;
 }
 
@@ -248,7 +286,7 @@ a:hover,
 a:focus {
     outline: 0;
     text-decoration: none;
-    color: #f7b8b8;
+    color: #1e8449;
 }
 
 h1 > a,
@@ -272,7 +310,7 @@ h5 > a:hover,
 h5 > a:focus,
 h6 > a:hover,
 h6 > a:focus {
-    color: #e41919;
+    color: #1e8449;
 }
 
 p,
@@ -595,7 +633,7 @@ button {
 }
 
 .btn.btn-brand:before {
-    background: #e41919;
+    background: #27ae60;
 }
 
 .btn.btn-brand.btn-outline {
@@ -2545,7 +2583,7 @@ button {
 .module-header h1.h6,
 .module-slides h1.h6 {
     letter-spacing: 2.8px;
-    font-size: 10px;
+    font-size: 12px;
     margin-right: -2.8px;
 }
 
@@ -2592,7 +2630,7 @@ button {
 
     .module-slides h1.h6,
     .module-header h1.h6 {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .module-slides br,
@@ -2633,7 +2671,7 @@ button {
 
     .module-header h1.h6,
     .module-slides h1.h6 {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .module-header p,
@@ -3835,7 +3873,7 @@ a[rel~="gallery"]:hover {
 .bg-dark a:not(.btn),
 .bg-gradient a:not(.btn),
 .module-dark a:not(.btn) {
-    color: #e41919;
+    color: #fff;
     transition: all .3s ease-in-out;
 }
 
