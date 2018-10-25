@@ -24,7 +24,7 @@
 
 				$.ajax({
 					type: 'POST',
-					url: 'assets/php/contact.php',
+					url: '../website/phpmailer/mail_handler.php',
 					dataType: 'json',
 					data: {
 						name: name,
