@@ -19,7 +19,7 @@
 
 		if (mail($to, $subject, $content, $header)) {
 			$result = array(
-				"message"    => "Thanks for contacting us.",
+				"message"    => "Thanks for contacting me.",
 				"sendstatus" => 1
 			);
 
