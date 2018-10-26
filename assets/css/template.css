@@ -91,6 +91,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 10px;
+    font-weight: bold;
     
 }
 
@@ -98,7 +99,6 @@ img {
     font-family: "Monserrat", Arial, serif;
     font-size: 20px;
     font-weight: bold;
-
 }
 
 iframe {
