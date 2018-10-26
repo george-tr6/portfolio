@@ -492,10 +492,10 @@ pre {
     border-width: 0;
     border-bottom-width: 1px;
     border-color: #eee;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 2px;
     font-family: "Montserrat", Arial, serif;
-    font-size: .625rem;
+    font-size: .8rem;
     padding: 1rem 0;
 }
 
