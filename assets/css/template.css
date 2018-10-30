@@ -90,9 +90,15 @@ img {
     padding: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 10px; 
+}
+.app-text{
+    font-family: "Monserrat", Arial, serif;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font-size: 10px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 
 .brand-text{
