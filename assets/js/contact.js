@@ -24,7 +24,7 @@
 
 				$.ajax({
 					type: 'POST',
-					url: 'assets/php/contact.php',
+					url: 'phpmailer/mail_handler.php',
 					dataType: 'json',
 					data: {
 						name: name,
@@ -38,11 +38,11 @@
 						submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
 					},
 					success: function(result) {
-						if(result.sendstatus == 1) {
-							ajaxResponse.html(result.message);
+						if(result.success) {
+							ajaxResponse.html("Thanks for sending a message!");
 							$form.fadeOut(500);
 						} else {
-							ajaxResponse.html(result.message);
+							ajaxResponse.html("Your message didn't send.  Please try again later!");
 						}
 					}
 				});

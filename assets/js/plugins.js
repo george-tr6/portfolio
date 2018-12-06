@@ -18477,7 +18477,8 @@ if (typeof Object.create !== 'function') {
 				// additional error messages or events
 			},
 			submitSuccess: function($form, event) {
-				event.preventDefault();
+        event.preventDefault();
+        return;
 
 				var submit          = $('#contact-form submit');
 				var ajaxResponse    = $('#contact-response');

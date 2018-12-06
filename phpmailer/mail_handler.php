@@ -1,6 +1,8 @@
 <?php
 require_once('email_config.php');
 require('PHPMailer/src/PHPMailer.php');
+require('PHPMailer/src/SMTP.php');
+require('PHPMailer/src/Exception.php');
 
 
 //Validate POST inputs
@@ -31,14 +33,14 @@ if(empty($message['message'])){
     $output['messages'][] = 'missing message key';
 }
 
-//Sanitize Subject
-$message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-if(empty($message['subject'])){
-    $output['success'] = false;
-    $output['messages'][] = 'missing subject key';
-}
+// //Sanitize Subject
+// $message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+// if(empty($message['subject'])){
+//     $output['success'] = false;
+//     $output['messages'][] = 'missing subject key';
+// }
 //Sanitize phone number
-$message['phone'] = preg_replace('/[^0-9]/','', $_POST['phone_number']);
+$message['phone'] = preg_replace('/[^0-9]/','', $_POST['phone']);
 
 if($output['success'] !==null){
     http_response_code(422);
@@ -47,8 +49,8 @@ if($output['success'] !==null){
 }
 
 
-$mail = new PHPMailer;
-$mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
+$mail = new PHPMailer\PHPMailer\PHPMailer;
+$mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
@@ -78,7 +80,7 @@ $mail->addReplyTo($message['email'], $message['name']);                         
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
-$message['subject'] = substr($message['messages'], 0, 78);
+$message['subject'] = substr($message['message'], 0, 78);
 
 $mail->Subject = $message['subject'];
 

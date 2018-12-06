@@ -54,6 +54,9 @@ img {
     flex:0 0 100%;
     max-width: 100%;
 }
+
+/* Custom Styling */
+
 .skillContailner{
     display: inline-flex;
     flex-direction: row;
@@ -68,7 +71,41 @@ img {
     display: inline-block;
     margin: 30px;
 }
+.skillIconContainer img{
+    height: 4rem;
+    width: auto;
+}
+.btns-action{
+    display: flex;
+    flex-direction: row;
+    
+}
+.btns-action i{
+    font-size: 15px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.social-text{
+    font-family: "Monserrat", Arial, serif;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px; 
+}
+.app-text{
+    font-family: "Monserrat", Arial, serif;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: bold; 
+}
 
+.brand-text{
+    font-family: "Monserrat", Arial, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 iframe {
     border: 0;
@@ -237,7 +274,8 @@ iframe {
 */
 
 a {
-    color: #e41919;
+    /* color: #e41919; */
+    color: #27ae60;
     transition: all .3s ease-in-out;
 }
 
@@ -245,7 +283,7 @@ a:hover,
 a:focus {
     outline: 0;
     text-decoration: none;
-    color: #f7b8b8;
+    color: #1e8449;
 }
 
 h1 > a,
@@ -269,7 +307,7 @@ h5 > a:hover,
 h5 > a:focus,
 h6 > a:hover,
 h6 > a:focus {
-    color: #e41919;
+    color: #1e8449;
 }
 
 p,
@@ -460,10 +498,10 @@ pre {
     border-width: 0;
     border-bottom-width: 1px;
     border-color: #eee;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 2px;
     font-family: "Montserrat", Arial, serif;
-    font-size: .625rem;
+    font-size: .8rem;
     padding: 1rem 0;
 }
 
@@ -592,7 +630,7 @@ button {
 }
 
 .btn.btn-brand:before {
-    background: #e41919;
+    background: #27ae60;
 }
 
 .btn.btn-brand.btn-outline {
@@ -1917,6 +1955,7 @@ button {
 .inner-brand {
     vertical-align: middle;
     display: inline-block;
+    color: white;
 }
 
 .inner-navigation {
@@ -2542,7 +2581,7 @@ button {
 .module-header h1.h6,
 .module-slides h1.h6 {
     letter-spacing: 2.8px;
-    font-size: 10px;
+    font-size: 12px;
     margin-right: -2.8px;
 }
 
@@ -2589,7 +2628,7 @@ button {
 
     .module-slides h1.h6,
     .module-header h1.h6 {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .module-slides br,
@@ -2630,7 +2669,7 @@ button {
 
     .module-header h1.h6,
     .module-slides h1.h6 {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .module-header p,
@@ -2642,7 +2681,7 @@ button {
 @media (max-width: 568px) {
     .module-header h1.h1,
     .module-slides h1.h1 {
-        font-size: 12px;
+        font-size: 25px;
     }
 
     .module-header h1.h2,
@@ -2667,7 +2706,7 @@ button {
 
     .module-header h1.h6,
     .module-slides h1.h6 {
-        font-size: 7px;
+        font-size: 10px;
     }
 
     .module-header p,
@@ -3832,7 +3871,7 @@ a[rel~="gallery"]:hover {
 .bg-dark a:not(.btn),
 .bg-gradient a:not(.btn),
 .module-dark a:not(.btn) {
-    color: #e41919;
+    color: #fff;
     transition: all .3s ease-in-out;
 }
 
